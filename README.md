@@ -17,6 +17,7 @@ npm i -D @ads/jest-config-node @ads/node-utils
 module.exports = {
     preset: require.resolve('@ads/jest-config-node'),
 };
+
 ```
 
 
@@ -117,6 +118,7 @@ module.exports = {
         '!**/test/**',
     ],
 };
+
 ```
 
 
