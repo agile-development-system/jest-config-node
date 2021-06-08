@@ -1,5 +1,6 @@
 // jest.config.js
 
-module.exports = {
-    preset: require.resolve('@ads/jest-config-node'),
-};
+const { PresetUtils } = require('@ads/node-utils');
+module.exports = PresetUtils.getDeepPresetMergeAndModify({
+    presets: [require('@ads/jest-config-node')],
+});
