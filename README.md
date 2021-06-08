@@ -1,6 +1,6 @@
 
 # @ads/jest-config-node
-**版本** ：1.0.1
+**版本** ：1.0.2
 ADS系统的node平台jest预设
 
 ## 快速开始
@@ -16,7 +16,11 @@ npm i -D @ads/jest-config-node @ads/node-utils
 
 const { PresetUtils } = require('@ads/node-utils');
 module.exports = PresetUtils.getDeepPresetMergeAndModify({
-    presets: [require('@ads/jest-config-node')],
+    presets: [
+        require('@ads/jest-config-node')({
+            entry: 'src/index.js',
+        }),
+    ],
 });
 ```
 
@@ -88,18 +92,19 @@ test('test1', async () => {
 ```js
 const { FastPath, FastFs } = require('@ads/node-utils');
 const pkgPath = FastPath.getCwdPath('package.json');
+const path = require('path');
 let pkg = {};
 if (FastFs.getPathStatSync(pkgPath)) {
     pkg = require(pkgPath);
 }
-module.exports = {
+module.exports = ({ entry = 'src/index.js' }) => ({
     collectCoverage: true,
     testEnvironment: 'node',
     roots: [
         '<rootDir>/test',
     ],
     moduleNameMapper: {
-        [`^${pkg.name}$`]: '<rootDir>/src/index.js',
+        [`^${pkg.name}$`]: path.join('<rootDir>', entry),
     },
     coverageThreshold: {
         global: {
@@ -116,7 +121,7 @@ module.exports = {
         '!**/node_modules/**',
         '!**/test/**',
     ],
-};
+});
 ```
 
 
