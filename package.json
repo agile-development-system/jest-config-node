@@ -1,6 +1,6 @@
 {
   "name": "@ads/jest-config-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ADS系统的node平台jest预设",
   "main": "lib/index.js",
   "scripts": {
