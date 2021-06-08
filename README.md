@@ -1,6 +1,6 @@
 
 # @ads/jest-config-node
-**版本** ：1.0.2
+**版本** ：1.0.3
 ADS系统的node平台jest预设
 
 ## 快速开始
@@ -97,7 +97,7 @@ let pkg = {};
 if (FastFs.getPathStatSync(pkgPath)) {
     pkg = require(pkgPath);
 }
-module.exports = ({ entry = 'src/index.js' }) => ({
+module.exports = ({ entry = 'src/index.js' } = {}) => ({
     collectCoverage: true,
     testEnvironment: 'node',
     roots: [
