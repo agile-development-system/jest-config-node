@@ -1,3 +1,12 @@
+## [1.0.3](https://gitee.com/agile-development-system/jest-config-node/compare/v1.0.2...v1.0.3) (2021-06-08)
+
+
+### Bug Fixes
+
+* 参数支持可选 ([2b3e9ca](https://gitee.com/agile-development-system/jest-config-node/commits/2b3e9ca23af8c11420370170dae3372190e42141))
+
+
+
 ## [1.0.2](https://gitee.com/agile-development-system/jest-config-node/compare/v1.0.1...v1.0.2) (2021-06-08)
 
 
