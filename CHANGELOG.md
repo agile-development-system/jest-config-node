@@ -1,3 +1,12 @@
+## [1.0.2](https://gitee.com/agile-development-system/jest-config-node/compare/v1.0.1...v1.0.2) (2021-06-08)
+
+
+### Features
+
+* 改为函数调用,支持接收options.entry参数,指定测试目标入口文件 ([1962252](https://gitee.com/agile-development-system/jest-config-node/commits/19622527d41fd0cf928c2295c1ac7deb00dee60b))
+
+
+
 ## [1.0.1](https://gitee.com/agile-development-system/jest-config-node/compare/036bf9c09c76b3124ce97e624635bb00ecefcf4a...v1.0.1) (2021-06-08)
 
 
