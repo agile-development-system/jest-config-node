@@ -2,9 +2,9 @@
  * @Author: 锦阳
  * @Create: 2021年05月31日
  */
-const GenDoc = require('@ads/cli-plugin-doc');
+const GenDoc = require('@agds/cli-plugin-doc');
 const fs = require('fs-extra');
-const { FastPath } = require('@ads/node-utils');
+const { FastPath } = require('@agds/node-utils');
 module.exports = (
     /**
      * 配置参数

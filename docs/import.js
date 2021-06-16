@@ -1,10 +1,10 @@
 // jest.config.js
 
-const { PresetUtils } = require('@ads/node-utils');
+const { PresetUtils } = require('@agds/node-utils');
 // 强化jest的presets功能
 module.exports = PresetUtils.getDeepPresetMergeAndModify({
     presets: [
-        require('@ads/jest-config-node')({
+        require('@agds/jest-config-node')({
             entry: 'src/index.js',
         }),
     ],

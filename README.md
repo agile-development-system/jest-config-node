@@ -1,23 +1,23 @@
 
-# @ads/jest-config-node
-**版本** ：1.0.3
-ADS系统的node平台jest预设
+# @agds/jest-config-node
+**版本** ：1.0.0
+agds系统的node平台jest预设
 
 ## 快速开始
 
 ### 安装
 ```bash
-npm i -D @ads/jest-config-node @ads/node-utils
+npm i -D @agds/jest-config-node @agds/node-utils
 ```
 
 ### 引入
 ```js
 // jest.config.js
 
-const { PresetUtils } = require('@ads/node-utils');
+const { PresetUtils } = require('@agds/node-utils');
 module.exports = PresetUtils.getDeepPresetMergeAndModify({
     presets: [
-        require('@ads/jest-config-node')({
+        require('@agds/jest-config-node')({
             entry: 'src/index.js',
         }),
     ],
@@ -90,7 +90,7 @@ test('test1', async () => {
 ## 配置源码
 
 ```js
-const { FastPath, FastFs } = require('@ads/node-utils');
+const { FastPath, FastFs } = require('@agds/node-utils');
 const pkgPath = FastPath.getCwdPath('package.json');
 const path = require('path');
 let pkg = {};
