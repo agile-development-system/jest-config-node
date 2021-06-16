@@ -1,20 +1,24 @@
-
 # @agds/jest-config-node
-**版本** ：1.0.0
+
+**版本** ：1.0.3
+
 agds系统的node平台jest预设
 
 ## 快速开始
 
 ### 安装
+
 ```bash
-npm i -D @agds/jest-config-node @agds/node-utils
+npm i -D @agds/jest-config-node
 ```
 
 ### 引入
+
 ```js
 // jest.config.js
 
 const { PresetUtils } = require('@agds/node-utils');
+// 强化jest的presets功能
 module.exports = PresetUtils.getDeepPresetMergeAndModify({
     presets: [
         require('@agds/jest-config-node')({
