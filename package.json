@@ -1,6 +1,6 @@
 {
   "name": "@agds/jest-config-node",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "agds系统的node平台jest预设",
   "main": "lib/index.js",
   "scripts": {
