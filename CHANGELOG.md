@@ -1,3 +1,7 @@
+## [1.0.5](https://gitee.com/agile-development-system/jest-config-node/compare/v1.0.4...v1.0.5) (2021-07-07)
+
+
+
 ## [1.0.4](https://gitee.com/agile-development-system/jest-config-node/compare/v1.0.3...v1.0.4) (2021-06-16)
 
 
