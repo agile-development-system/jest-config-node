@@ -4,7 +4,7 @@
 
 # @agds/jest-config-node
 
-**版本** ：1.0.4
+**版本** ：1.0.5
 
 agds系统的node平台jest预设
 
