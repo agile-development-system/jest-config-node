@@ -43,7 +43,7 @@
     "jest": "^27.0.3"
   },
   "devDependencies": {
-    "@agds/agds-doc-preset": "^1.0.5",
+    "@agds/agds-doc-preset": "^1.0.6",
     "@agds/cli-plugin-doc": "^1.0.10",
     "@agds/eslint-config-js": "^1.0.0",
     "@commitlint/cli": "^12.1.4",
